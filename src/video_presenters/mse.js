@@ -136,7 +136,7 @@ export class MSE {
                     this.doCleanup();
                     return;
                 }
-                Log.error(`Error occured while appending buffer. ${e.name}: ${e.message}`);
+                //Log.error(`Error occured while appending buffer. ${e.name}: ${e.message}`);
                 this.eventSource.dispatchEvent('error');
             }
         }
