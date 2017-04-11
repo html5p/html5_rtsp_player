@@ -56,7 +56,7 @@ export class WebSocketProxy {
                 this.sock.close();
             };
             this.sock.onclose = (e)=>{
-                Log.error(`[${this.protocol}] ${e.type}. code: ${e.code}`);
+                //Log.error(`[${this.protocol}] ${e.type}. code: ${e.code}`);
                 this.disconnect_handler();
             };
         });
